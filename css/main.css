@@ -612,17 +612,19 @@ faq
      margin-bottom: 20px;
    }
 
-   .features article{
+
+   .features article {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: column wrap;
      flex-basis: 50%;
-   }
 
+   }
    .features .features-item-desctiption {
      width: 62%;
    }
+
 
    /* Reviews */
    .reviews article {
@@ -787,9 +789,10 @@ DESKTOP STYLES------Homepage------------
        width:90%;
      }
 
-     .features article{
+     .features article {
        flex-basis: 33%;
      }
+
 
      /* Reviews */
 
