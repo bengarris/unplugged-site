@@ -131,11 +131,12 @@ textarea {
    }
 
    img {
+     width: 100%;
 
    }
 
    figure {
-
+     margin: 0;
    }
 
    address {
@@ -170,9 +171,11 @@ header .content-wrapper {
 }
 
 header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -199,14 +202,17 @@ header nav ul {
 }
 
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer{
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
   margin: 0;
-  color:#eaeaea;
-  text-align: center;
 }
 
 footer .content-wrapper {
@@ -232,8 +238,7 @@ footer .social-icons p {
 
 footer .copywright {
   margin: 20px 0;
-  color:#eaeaea;
-  text-align: center;
+
 }
 
 /* -------MOBILE STYLES - Homepage -------- */
@@ -242,12 +247,19 @@ footer .copywright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero.jpg') #333;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
 }
+
 .hero-area h1 {
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+
 }
       /*--- Aside ---*/
 aside {
@@ -290,12 +302,14 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
   margin-bottom: 60px;
-  padding-left: 10px;
-  text-align: left;
 }
 
 .features .features-items {
@@ -324,9 +338,8 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-.reviews h2{
+.reviews h2 {
   margin-bottom: 40px;
-  padding-left: 10px;
   line-height: 1;
 }
 
@@ -334,6 +347,7 @@ input[type=button] {
   width: 55%;
   margin: 20px 0;
 }
+
 
 
 /*==============================================================================
@@ -358,7 +372,6 @@ input[type=button] {
 
  .contact-content p {
    margin: 0;
-   text-align: left;
  }
 
 
@@ -390,8 +403,6 @@ faq
 
 .faq-content {
   margin-bottom: 50px;
-  text-align: left;
-  line-height: normal;
 }
 
 .faq-content h4 {
@@ -522,6 +533,10 @@ faq
      justify-content: space-between;
    }
 
+   header figure {
+     width: 30%;
+   }
+
    header nav {
        width: 20%
      }
@@ -536,6 +551,10 @@ faq
      }
 
      /*---Hero Area----*/
+
+     .hero-area {
+       min-height: 600px;
+     }
 
     .hero-area h1 {
        font-size: 3em;
@@ -582,6 +601,7 @@ faq
      justify-content: space-between;
    }
 
+   .reviews article figure,
    .reviews article div {
        width: 49%;
    }
@@ -709,7 +729,7 @@ DESKTOP STYLES------Homepage------------
 
     .hero-area h1{
       font-size: 3.75em;
-      width: 60%;
+      width: 80%;
     }
 
      /*aside*/
@@ -751,6 +771,7 @@ DESKTOP STYLES------Homepage------------
      footer h4 {
        font-size: 1.875em;
      }
+
 
      /*====================================================================
      About page
