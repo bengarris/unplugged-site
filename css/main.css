@@ -317,20 +317,24 @@ input[type=button] {
   background-size: cover;
 }
 
+.features-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-basis: 50%;
+
+}
+
 .features h2 {
   margin-bottom: 60px;
 }
 
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
 .features article {
-  width: 60%;
-  margin: 30px 0 0 60px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 30px 0;
 }
 
 .features p {
@@ -567,7 +571,7 @@ faq
    }
 
    header nav {
-       width: 20%;
+       width: 30%;
      }
 
    header nav ul {
@@ -612,20 +616,17 @@ faq
      margin-bottom: 20px;
    }
 
-
    .features article {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: column wrap;
-     flex-basis: 50%;
-
+     
    }
-   .features .features-item-desctiption {
+
+   .features .features-item-description {
      width: 62%;
    }
 
-
+   .features i {
+     margin-bottom: 30px;
+   }
    /* Reviews */
    .reviews article {
      display: flex;
@@ -664,6 +665,10 @@ faq
    margin-bottom: 40px;
  }
 
+ footer .social-icons {
+   width: 12.5em;
+   justify-content: space-between;
+ }
  footer p {
      line-height: 1.285;
  }
@@ -740,12 +745,32 @@ DESKTOP STYLES------Homepage------------
      /*--Desktop Styles Here---*/
 
      header {
-       padding: 15px 0;
+       justify-content: space-around;
+       padding: 33px 0;
+
      }
 
-     .content-wrapper {
+     header .content-wrapper {
        max-width: 960px;
+       justify-content: space-between;
      }
+
+     header figure {
+
+}
+
+     header nav {
+         width: 50%;
+       }
+
+     header nav ul {
+       justify-content: space-between;
+
+       }
+
+     .header-divider {
+         display: none;
+       }
 
      h2 {
        font-size: 2.25em;
@@ -765,7 +790,7 @@ DESKTOP STYLES------Homepage------------
 
     .hero-area h1{
       font-size: 3.75em;
-      width: 80%;
+      width: 90%;
     }
 
      /*aside*/
