@@ -152,22 +152,23 @@ textarea {
 
 header,
  footer{
+ background-color: #202322;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
-   background-color: #202322;
 }
 
 header {
   padding: 15px 0;
 }
+
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 header figure {
@@ -182,34 +183,34 @@ header figure {
   background: #3a3a3a;
   width: 100%;
   height: 1px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
-  font-weight: 700;
-  font-size: 1.125em;
-  text-transform: uppercase;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
-
 
 header nav ul li {
   font-size: 1.125em;
 }
 
 footer{
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
+
 }
 
 footer p {
@@ -306,45 +307,46 @@ input[type=button] {
 }
 
 /* Features */
-
 .features {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
   background: url('../img/features.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-}
-
-.features-container {
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  flex-basis: 50%;
-
 }
 
 .features h2 {
   margin-bottom: 60px;
 }
 
-
-.features article {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  margin: 30px 0;
+.features .content-wrapper {
+  width: 90%;
+  margin: 0;
 }
 
-.features p {
+.features article {
+  width: 63%;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   margin: 0;
-  text-align: center;
 }
 
 .features i {
-	font-size: 3.75em;
+  font-size: 3.75em;
   margin-bottom: 40px;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
 }
 
         /* ---- Review ----*/
@@ -413,20 +415,19 @@ faq
 =============================================================================*/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
-
 }
 
 .faq h2 {
@@ -617,7 +618,7 @@ faq
    }
 
    .features article {
-     
+
    }
 
    .features .features-item-description {
@@ -665,12 +666,13 @@ faq
    margin-bottom: 40px;
  }
 
+ footer p {
+     line-height: 1.285;
+ }
+
  footer .social-icons {
    width: 12.5em;
    justify-content: space-between;
- }
- footer p {
-     line-height: 1.285;
  }
 
  footer .copyright {
@@ -690,6 +692,7 @@ About page
 
     .mission-content p {
         width: 45%;
+        line-height: 20px;
     }
 
     .map figure {
@@ -701,10 +704,11 @@ About page
         width: 80%;
     }
 
-    .contact-content {
-        display: flex;
+    address .contact-content {
+        display:flex;
         justify-content: space-between;
-        align-items:flex-start;
+        align-items: flex-start;
+
 }
     .contact-content h4 {
         font-size: 1.5em;
