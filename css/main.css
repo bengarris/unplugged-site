@@ -145,8 +145,9 @@ textarea {
    }
 
 .content-wrapper {
-  width: 90%;
-  margin: 50px 0;
+  width: 100%;
+  margin: 0;
+
 }
 /* --------BASE HEADER and FOOTER STYLES -------- */
 
@@ -749,28 +750,15 @@ DESKTOP STYLES------Homepage------------
      /*--Desktop Styles Here---*/
 
      header {
-       justify-content: space-around;
-       padding: 33px 0;
+       padding: 15px 0;
 
      }
 
-     header .content-wrapper {
+     .content-wrapper {
        max-width: 960px;
-       justify-content: space-between;
      }
 
-     header figure {
 
-}
-
-     header nav {
-         width: 50%;
-       }
-
-     header nav ul {
-       justify-content: space-between;
-
-       }
 
      .header-divider {
          display: none;
@@ -794,7 +782,7 @@ DESKTOP STYLES------Homepage------------
 
     .hero-area h1{
       font-size: 3.75em;
-      width: 90%;
+      width: 80%;
     }
 
      /*aside*/
@@ -814,7 +802,7 @@ DESKTOP STYLES------Homepage------------
 
 
      /* Features */
-     .features h2{
+     .features h2 {
        width:90%;
      }
 
@@ -842,15 +830,16 @@ DESKTOP STYLES------Homepage------------
      /*====================================================================
      About page
      =====================================================================*/
+     .map figure {
+       padding-bottom: 37.5%;
+     }
 
      .mission h2,
      .contact-section .content-wrapper h2 {
           width: 95%;
           font-size: 3em;
       }
-      .map figure {
-        padding-bottom: 35.5%;
-      }
+
 
       .contact-content h4 {
         font-size: 1.875em;
